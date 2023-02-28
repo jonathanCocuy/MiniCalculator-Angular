@@ -1,0 +1,104 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.box-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-starry-dark-blue-purple-aesthetic-space-background-skydark-bluedeep-purplebeautifulspace-image_56426.jpg);
+    background-size: 500px;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-title{
+    color: rgb(0, 94, 94);
+}
+
+.title{
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+}
+
+.p-text{
+    text-align: center;
+    height: 60px;
+    font-size: 25px;
+    width: 90%;
+    color: white;
+}
+
+.inputs{
+    width: 50px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.inputs[type=number]::-webkit-inner-spin-button, 
+.inputs[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+}
+
+.p-number{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.operators{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons{
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.result{
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background: white;
+}
+
+.p-result{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (max-width: 400px) {
+    .form{
+        width: 300px;
+    }
+    
+    .title{
+        font-size: 32px;
+    }
+}
