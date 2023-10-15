@@ -1,23 +1,57 @@
 <body>
-  
   <div class="box-form">
     <form class="form">
-      <h1 class="title"> <span class="text-title">Mini</span>Calculator</h1> <br>
-      <p class="p-text">Simple calculator, you can: add, restore, divide and multiply</p> <br>
-  
-      <input class="inputs" type="number" [(ngModel)]="number1" name="number1"> <br>
-      <input class="inputs" type="number" [(ngModel)]="number2" name="number2"> <br>
-  
+      <h1 class="title"><span class="text-title">Mini</span>Calculator</h1>
+      <br />
+      <p class="p-text">
+        Simple calculator, you can: add, restore, divide and multiply
+      </p>
+      <br />
+
+      <input
+        class="inputs"
+        type="number"
+        [(ngModel)]="number1"
+        name="number1"
+        placeholder="0"
+      />
+      <br />
+      <input
+        class="inputs"
+        type="number"
+        [(ngModel)]="number2"
+        name="number2"
+        placeholder="0"
+      />
+      <br />
+
       <div class="operators">
-        <input class="buttons" type="submit" value="+" (click)="AddNumber()">
-        <input class="buttons" type="submit" value="-" (click)="SubtrackNumber()">
-        <input class="buttons" type="submit" value="x" (click)="MultiplyNumber()">
-        <input class="buttons" type="submit" value="/" (click)="DivideNumber()">
-      </div> <br>
-  
-      <p class="p-result">Result</p> <p class="result">{{result}}</p> <br>
-      <a class="button-dir" href="https://jonathancocuy.github.io/peso-planeta/">Click Planet</a>
+        <input class="buttons" type="submit" value="+" (click)="AddNumber()" />
+        <input
+          class="buttons"
+          type="submit"
+          value="-"
+          (click)="SubtrackNumber()"
+        />
+        <input
+          class="buttons"
+          type="submit"
+          value="x"
+          (click)="MultiplyNumber()"
+        />
+        <input
+          class="buttons"
+          type="submit"
+          value="/"
+          (click)="DivideNumber()"
+        />
+      </div>
+      <br />
+
+      <p class="p-result">Result</p>
+      <p class="result">{{ result }}</p>
+      <br />
+      <button class="button-dir" type="reset">Reset</button>
     </form>
   </div>
-
 </body>
